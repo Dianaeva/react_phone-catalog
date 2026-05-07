@@ -1,0 +1,50 @@
+// Typography
+$font-family: 'Mont', sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.5;
+$headings: (
+  h1: (
+    weight: 800,
+    letter-spacing: -0.01em,
+    mobile: (font-size: 32px, line-height: 41px),
+    desktop: (font-size: 48px, line-height: 56px),
+  ),
+  h2: (
+    weight: 800,
+    letter-spacing: 0,
+    mobile: (font-size: 22px, line-height: 31px),
+    desktop: (font-size: 32px, line-height: 41px),
+  ),
+  h3: (
+    weight: 800,
+    letter-spacing: 0,
+    mobile: (font-size: 20px, line-height: 26px),
+    desktop: (font-size: 22px, line-height: 31px),
+  ),
+  h4: (
+    weight: 800,
+    letter-spacing: 0,
+    mobile: (font-size: 16px, line-height: 20px),
+    desktop: (font-size: 20px, line-height: 26px),
+  ),
+  h5: (
+    weight: 800,
+    letter-spacing: 0,
+    mobile: (font-size: 16px, line-height: 20px),
+    desktop: (font-size: 20px, line-height: 26px),
+  ),
+  h6: (
+    weight: 800,
+    letter-spacing: 0,
+    mobile: (font-size: 16px, line-height: 20px),
+    desktop: (font-size: 20px, line-height: 26px),
+  ),
+);
+
+// Uppercase text
+$font-size__uppercase: 12px;
+$line-height__uppercase: 11px;
+
+// Small text
+$font-size__small: 12px;
+$line-height__small: 100%;

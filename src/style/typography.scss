@@ -1,0 +1,47 @@
+@use './variables/typography' as typography;
+@use './variables/breakpoints' as breakpoints;
+@use "sass:map";
+
+body {
+  font-family: typography.$font-family, sans-serif;
+  font-size: typography.$font-size-base;
+  font-weight: 500;
+  line-height: typography.$line-height-base;
+  letter-spacing: 0;
+}
+
+button {
+  font-size: typography.$font-size-base;
+  font-weight: 600;
+  line-height: typography.$line-height-base;
+  letter-spacing: 0;
+}
+
+@each $tag, $props in typography.$headings {
+  #{$tag} {
+    font-size: map.get(map.get($props, mobile), font-size);
+    font-weight: map.get($props, weight);
+    line-height: map.get(map.get($props, mobile), line-height);
+    letter-spacing: map.get($props, letter-spacing);
+
+    @media (min-width: breakpoints.$layout-breakpoint-tablet) {
+      font-size: map.get(map.get($props, desktop), font-size);
+      line-height: map.get(map.get($props, desktop), line-height);
+    }
+  }
+}
+
+.uppercase {
+  font-size: typography.$font-size__uppercase;
+  font-weight: 700;
+  line-height: typography.$line-height__uppercase;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.small, small {
+  font-size: typography.$font-size__small;
+  font-weight: 600;
+  line-height: typography.$line-height__small;
+  letter-spacing: 0;
+}

@@ -1,0 +1,20 @@
+// Font Mont
+$mont-font-path: "fonts/";
+
+@font-face {
+  font-family: Mont;
+  font-weight: 800;
+  src: url("#{$mont-font-path}/Mont-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Mont;
+  font-weight: 600;
+  src: url("#{$mont-font-path}/Mont-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Mont;
+  font-weight: 500;
+  src: url("#{$mont-font-path}/Mont-Regular.otf") format("opentype");
+}
