@@ -10,6 +10,10 @@ body {
   letter-spacing: 0;
 }
 
+a {
+  color: inherit;
+}
+
 button {
   font-size: typography.$font-size-base;
   font-weight: 600;
@@ -31,7 +35,7 @@ button {
   }
 }
 
-.uppercase {
+.text-uppercase {
   font-size: typography.$font-size__uppercase;
   font-weight: 700;
   line-height: typography.$line-height__uppercase;
@@ -39,7 +43,7 @@ button {
   letter-spacing: 0.04em;
 }
 
-.small, small {
+.text-small, small {
   font-size: typography.$font-size__small;
   font-weight: 600;
   line-height: typography.$line-height__small;

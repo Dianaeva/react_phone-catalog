@@ -1,0 +1,13 @@
+@use '../variables/colors' as colors;
+
+:root {
+  --color-bg: #{colors.$color-white};
+  --color-primary: #{colors.$color-solid-graphite};
+  --color-secondary:  #{colors.$color-light-gray-camo};
+  --color-icons: #{colors.$color-cloud-gray};
+  --color-elements: #{colors.$color-cute-silver};
+  --color-hover-plus-bg: #{colors.$color-pale-white};
+  --color-white: #{colors.$color-white};
+  --color-green: #{colors.$color-crispy-mint-green};
+  --color-red: #{colors.$color-red-aura};
+}
