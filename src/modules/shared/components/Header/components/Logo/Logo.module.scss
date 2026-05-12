@@ -1,0 +1,13 @@
+@use '../../../../../../style/variables/breakpoints' as breakpoints;
+
+.Logo {
+  width: 64px;
+  height: 22px;
+}
+
+@media (min-width: breakpoints.$layout-breakpoint-desktop) {
+  .Logo {
+    width: 80px;
+    height: 28px;
+  }
+}

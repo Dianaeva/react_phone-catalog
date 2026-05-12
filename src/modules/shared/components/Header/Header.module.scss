@@ -1,0 +1,54 @@
+@use './variables' as variables;
+@use '../../../../style/variables/breakpoints' as breakpoints;
+
+.Header {
+  display: flex;
+  column-gap: 1px;
+  justify-content: space-between;
+
+  height: variables.$header--height-mobile-tablet;
+  padding-bottom: 1px;
+
+  background-color: var(--color-elements);
+
+  &__slice {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg);
+
+    &:first-child {
+      flex-basis: 100%;
+      padding-left: variables.$header--padding-x-mobile-tablet;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$layout-breakpoint-tablet) {
+  .Header {
+    column-gap: 0;
+
+    &__slice {
+      &:last-child {
+        flex-basis: 100%;
+      }
+
+      &:first-child {
+        flex-basis: auto;
+        padding-right: calc(#{variables.$header--padding-x-mobile-tablet} * 2);
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$layout-breakpoint-desktop) {
+  .Header {
+    height: variables.$header--height-desktop;
+
+    &__slice {
+      &:first-child {
+        padding-right: calc(#{variables.$header--padding-x-desktop} * 2);
+        padding-left: variables.$header--padding-x-desktop;
+      }
+    }
+  }
+}

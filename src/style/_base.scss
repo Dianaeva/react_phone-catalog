@@ -1,7 +1,23 @@
+@use './variables/breakpoints' as breakpoints;
+@use './variables/layout' as layout;
+
 html {
   background-color: var(--color-bg);
 }
 
 body {
   color: var(--color-primary);
+}
+
+// Layout
+:root {
+  --content-padding-x: #{layout.$content-padding-x-mobile};
+
+  @media (min-width: breakpoints.$layout-breakpoint-tablet) {
+    --content-padding-x: #{layout.$content-padding-x-tablet};
+  }
+
+  @media (min-width: breakpoints.$layout-breakpoint-desktop) {
+    --content-padding-x: #{layout.$content-padding-x-desktop};
+  }
 }

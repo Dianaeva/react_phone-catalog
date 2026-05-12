@@ -8,6 +8,7 @@
 @use './variables/colors';
 @use './variables/typography' as variablesTypography;
 @use './variables/breakpoints';
+@use './variables/layout';
 
 // Common styles
 @use './typography';
