@@ -66,7 +66,7 @@ $navigation-items-gap-desktop: 64px;
 .NavButton {
   width: 100%;
 
-  &--active {
+  &:hover, &--active {
     -webkit-box-shadow: 0 -2px 0 0 rgba(0,0,0,1) inset;
     -moz-box-shadow: 0 -2px 0 0 rgba(0,0,0,1) inset;
     box-shadow: 0 -2px 0 0 rgba(0,0,0,1) inset;
@@ -84,7 +84,7 @@ $navigation-items-gap-desktop: 64px;
   padding: 8px 0;
   color: var(--color-secondary);
 
-  &--active {
+  &:hover, &--active {
     color: var(--color-primary);
     -webkit-box-shadow: 0 -2px 0 0 rgba(0,0,0,1) inset;
     -moz-box-shadow: 0 -2px 0 0 rgba(0,0,0,1) inset;
@@ -125,10 +125,16 @@ $navigation-items-gap-desktop: 64px;
     align-items: center;
     height: 100%;
     padding: 0;
+
+    &:hover, &--active {
+      -webkit-box-shadow: 0 -3px 0 0 rgba(0,0,0,1) inset;
+      -moz-box-shadow: 0 -3px 0 0 rgba(0,0,0,1) inset;
+      box-shadow: 0 -3px 0 0 rgba(0,0,0,1) inset;
+    }
   }
 
   .NavButton {
-    &--active {
+    &:hover, &--active {
       -webkit-box-shadow: 0 -3px 0 0 rgba(0,0,0,1) inset;
       -moz-box-shadow: 0 -3px 0 0 rgba(0,0,0,1) inset;
       box-shadow: 0 -3px 0 0 rgba(0,0,0,1) inset;

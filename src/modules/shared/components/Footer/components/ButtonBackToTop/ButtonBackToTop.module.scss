@@ -1,0 +1,20 @@
+@use '../../../../../../style/variables/breakpoints' as breakpoints;
+
+.ButtonBackToTop {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  &__label {
+    color: var(--color-secondary);
+  }
+}
+
+@media (min-width: breakpoints.$layout-breakpoint-tablet) {
+  .ButtonBackToTop {
+    width: auto;
+  }
+}

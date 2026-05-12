@@ -1,0 +1,28 @@
+@use '../../../../style/variables/breakpoints' as breakpoints;
+
+.Footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 32px var(--content-padding-x);
+  border-top: 1px solid var(--color-elements);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: breakpoints.$layout-breakpoint-tablet) {
+  .Footer {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+

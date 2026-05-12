@@ -9,9 +9,14 @@ body {
   color: var(--color-primary);
 }
 
+.icon {
+  color: var(--color-primary);
+}
+
 // Layout
 :root {
   --content-padding-x: #{layout.$content-padding-x-mobile};
+  --max-content-width: #{layout.$max-content-width};
 
   @media (min-width: breakpoints.$layout-breakpoint-tablet) {
     --content-padding-x: #{layout.$content-padding-x-tablet};

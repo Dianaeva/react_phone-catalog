@@ -1,0 +1,26 @@
+@use '../../../../../../style/variables/breakpoints' as breakpoints;
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  &__item {
+    color: var(--color-secondary);
+  }
+}
+
+@media (min-width: breakpoints.$layout-breakpoint-tablet) {
+  .Links {
+    flex-direction: row;
+    column-gap: 13.5px;
+    align-items: center;
+  }
+}
+
+@media (min-width: breakpoints.$layout-breakpoint-desktop) {
+  .Links {
+    column-gap: 107px;
+  }
+}
+

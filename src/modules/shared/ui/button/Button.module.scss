@@ -1,0 +1,58 @@
+.Button {
+  cursor: pointer;
+}
+
+// TODO: .Button-primary {}
+
+.Button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-icons);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0;
+
+  background-color: var(--color-bg);
+
+  // Sizes
+  &--small {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--medium {
+    width: 40px;
+    height: 40px;
+  }
+
+  // States
+  &:hover {
+    border-color: var(--color-primary);
+  }
+
+  &--selected, &:focus {
+    border-color: var(--color-primary);
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+
+    svg {
+      color: var(--color-bg);
+    }
+  }
+
+  &:disabled, &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    border-color: var(--color-elements);
+    color: var(--color-elements);
+
+    svg {
+      color: var(--color-elements);
+    }
+  }
+}
+
